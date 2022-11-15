@@ -4,7 +4,22 @@ Small cli tool to quickly generate basic Wireguard configs.
 
 ## Usage
 ```bash
-genwgconfs -h
+$ genwgconfs -h
+Usage of genwgconfs:
+  -all
+        Set AllowedIPs to forward all traffic through the server.
+  -endpoint value
+        Endpoint IP address/hostname of the Wireguard server. (required)
+  -output string
+        Output file base name or 'stdout' to print the configs to stdout (default "stdout")
+  -peers int
+        Number of peer configs to generate. (default 1)
+  -pk int
+        Optional PersistentKeepalive value for peers. (default 0. No PersistentKeepalive value is set)
+  -port int
+        Server/Endpoint port. (default 58120)
+  -subnet value
+        Subnet for the Wireguard configs. (default 10.0.0.0/24)
 ```
 
 ## Installation
