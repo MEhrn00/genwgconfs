@@ -69,6 +69,8 @@ func init() {
 			if ip == nil {
 				return errors.New("Endpoint is not a valid IP address or domain name.")
 			}
+
+			CommandLineArgs.Endpoint = s
 		} else {
 			CommandLineArgs.Endpoint = s
 		}
